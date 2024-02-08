@@ -8,14 +8,14 @@ import {
 
 describe('resolveValue', () => {
   test('should resolve provided value', async () => {
-    const result = await resolveValue('test');
-    expect(result).toBe('test');
+    const result = await resolveValue('value');
+    expect(result).toBe('value');
   });
 });
 
 describe('throwError', () => {
   test('should throw error with provided message', () => {
-    const message = 'Test Error';
+    const message = 'Error';
     expect(() => throwError(message)).toThrow(message);
   });
 
